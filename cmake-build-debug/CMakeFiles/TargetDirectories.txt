@@ -1,0 +1,3 @@
+/Users/huangruijia/Desktop/CLion/HRJrenderer/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/huangruijia/Desktop/CLion/HRJrenderer/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/huangruijia/Desktop/CLion/HRJrenderer/cmake-build-debug/CMakeFiles/HRJrenderer.dir
