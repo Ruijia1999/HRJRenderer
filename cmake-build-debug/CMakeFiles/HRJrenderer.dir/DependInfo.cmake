@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/Users/huangruijia/Desktop/CLion/HRJrenderer/HRJmath.cpp" "/Users/huangruijia/Desktop/CLion/HRJrenderer/cmake-build-debug/CMakeFiles/HRJrenderer.dir/HRJmath.cpp.o"
   "/Users/huangruijia/Desktop/CLion/HRJrenderer/geometry.cpp" "/Users/huangruijia/Desktop/CLion/HRJrenderer/cmake-build-debug/CMakeFiles/HRJrenderer.dir/geometry.cpp.o"
   "/Users/huangruijia/Desktop/CLion/HRJrenderer/main.cpp" "/Users/huangruijia/Desktop/CLion/HRJrenderer/cmake-build-debug/CMakeFiles/HRJrenderer.dir/main.cpp.o"
   "/Users/huangruijia/Desktop/CLion/HRJrenderer/model.cpp" "/Users/huangruijia/Desktop/CLion/HRJrenderer/cmake-build-debug/CMakeFiles/HRJrenderer.dir/model.cpp.o"

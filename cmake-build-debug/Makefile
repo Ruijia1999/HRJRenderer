@@ -143,6 +143,33 @@ HRJrenderer/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/HRJrenderer.dir/build.make CMakeFiles/HRJrenderer.dir/build
 .PHONY : HRJrenderer/fast
 
+HRJmath.o: HRJmath.cpp.o
+
+.PHONY : HRJmath.o
+
+# target to build an object file
+HRJmath.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HRJrenderer.dir/build.make CMakeFiles/HRJrenderer.dir/HRJmath.cpp.o
+.PHONY : HRJmath.cpp.o
+
+HRJmath.i: HRJmath.cpp.i
+
+.PHONY : HRJmath.i
+
+# target to preprocess a source file
+HRJmath.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HRJrenderer.dir/build.make CMakeFiles/HRJrenderer.dir/HRJmath.cpp.i
+.PHONY : HRJmath.cpp.i
+
+HRJmath.s: HRJmath.cpp.s
+
+.PHONY : HRJmath.s
+
+# target to generate assembly for a file
+HRJmath.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HRJrenderer.dir/build.make CMakeFiles/HRJrenderer.dir/HRJmath.cpp.s
+.PHONY : HRJmath.cpp.s
+
 geometry.o: geometry.cpp.o
 
 .PHONY : geometry.o
@@ -260,6 +287,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... HRJrenderer"
+	@echo "... HRJmath.o"
+	@echo "... HRJmath.i"
+	@echo "... HRJmath.s"
 	@echo "... geometry.o"
 	@echo "... geometry.i"
 	@echo "... geometry.s"
