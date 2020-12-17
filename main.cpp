@@ -162,6 +162,73 @@ void draw_triangle(vec3 *pts, TGAImage &image, TGAColor color, float *zbuffer ) 
     }
 
 }
+//重心法，有裂缝。
+void draw_triangle_color(vec3 *pts, TGAImage &image, TGAColor *colors, float *zbuffer ) {
+    vec2 bboxmin(image.get_width()-1,  image.get_height()-1);
+    vec2 bboxmax(0, 0);
+    vec2 clamp(image.get_width()-1, image.get_height()-1);
+    vec2 vt2D[3];
+    vt2D[0]=vec2{pts[0].x,pts[0].y};
+    vt2D[1]=vec2{pts[1].x,pts[1].y};
+    vt2D[2]=vec2{pts[2].x,pts[2].y};
+    TGAColor vcolor;
+    for (int i=0; i<3; i++) {
+        //std::cout<<"("<<pts[i].x<<", "<<pts[i].y<<")"<<std::endl;
+        for (int j=0; j<2; j++) {
+
+            bboxmin[j] = std::max(0.0,        std::min(bboxmin[j], pts[i][j]));
+            bboxmax[j] = std::min(clamp[j], std::max(bboxmax[j], pts[i][j]));
+        }
+    }
+    vec3 P;
+    std::cout<<barycentric(vt2D,vec2(15,3));
+//    vec3 v0(1,1,0);
+//    vec3 v1(8,15,0);
+//    vec3 v2(15,3,0);
+    std::cout<<std::endl;std::cout<<std::endl;
+    for (P.x=bboxmin.x; P.x<=bboxmax.x; P.x++) {
+        for (P.y=bboxmin.y; P.y<=bboxmax.y; P.y++) {
+            vec3 bc_screen  = barycentric(vt2D, vec2(P.x,P.y));
+            if(!isInTriangle(vt2D, vec2(P.x,P.y))){
+
+                continue;
+            }
+
+//            if (bc_screen.x<0 || bc_screen.y<0 || bc_screen.z<0) {
+//               // std::cout<<(P.y-vt2D[0].y)/(P.x-vt2D[0].x)<<" "<<(P.y-vt2D[1].y)/(P.x-vt2D[1].x)<<" "<<(P.y-vt2D[2].y)/(P.x-vt2D[2].x)<<std::endl;
+////if( (P.y-vt2D[0].y)/(P.x-vt2D[0].x)!=INFINITY&&(P.y-vt2D[1].y)/(P.x-vt2D[1].x)!=INFINITY&&(P.y-vt2D[2].y)/(P.x-vt2D[2].x)!=INFINITY)
+//
+//                  // std::cout<<"("<<P.x<<", "<<P.y<<"), ";
+//
+//                continue;
+//            }
+            P.z=0;
+            float r=0, g=0, b=0;
+            float k=0;
+
+            for (int i=0; i<3; i++) {
+
+                P.z += (pts[i][2]+200)*bc_screen[i];
+                r+=colors[i].bgra[0]*bc_screen[i];
+                g+=colors[i].bgra[1]*bc_screen[i];
+                b+=colors[i].bgra[2]*bc_screen[i];
+            }
+//            vec3 v0(1,1,0);
+//            vec3 v1(8,15,0);
+//            vec3 v2(15,3,0);
+            vcolor=TGAColor(r,g,b);
+
+
+            if(zbuffer[(int)P.x+(int)P.y*width]<P.z){
+                zbuffer[(int)P.x+(int)P.y*width]=P.z;
+                image.set(P.x, P.y, vcolor);
+            }
+
+
+        }
+    }
+
+}
 //贴图
 void draw_triangle(vec3 *pts, TGAImage &image, Model &model, float *zbuffer ) {
     vec2 bboxmin(image.get_width()-1,  image.get_height()-1);
@@ -291,17 +358,32 @@ void drawModelColor(TGAImage &image, TGAImage &texture){
 //请深入探究三角形光栅化方法
 int main(int argc, char** argv) {
     TGAImage image(width, height, TGAImage::RGB);
-    vec2 t0 = {5,20};
-    vec2 t1 = {15,30};
-    vec2 t2 = {28,6};
     //triangle(t0, t1, t2, image, red);
     TGAImage texture(width, height, TGAImage::RGB);
     texture.read_tga_file("/Users/huangruijia/Desktop/CLion/HRJrenderer/obj/african_head_diffuse.tga");
-    //drawModelColor(image,texture);
-    drawModelLine(image);
-
+    drawModelColor(image,texture);
+   // drawModelLine(image);
+//    vec3 v0(-0.8,-0.8,-0.1);
+//    vec3 v1(0.5,0.7,0.5);
+//    vec3 v2(0,0.1,0.5);
+//    vec3 v0(100,300,0);
+//    vec3 v1(300,800,0);
+//    vec3 v2(800,500,0);
+//    vec3 vs[3];
+//    vs[0]=v0;
+//    vs[1]=v1;
+//    vs[2]=v2;
+//    TGAColor c0(0,255,0,255);
+//    TGAColor c1(0,0,255,255);
+//    TGAColor c2(255,0,0,255);
+//    TGAColor cs[3];
+//    cs[0]=c0;
+//    cs[1]=c1;
+//    cs[2]=c2;
+//    float zbuffer[width*height]={-9999999};
+//    draw_triangle_color(vs,image,cs,zbuffer);
     image.write_tga_file("output.tga");
-
+  //  std::cout<<"not in "<<std::endl;
     return 0;
 }
 

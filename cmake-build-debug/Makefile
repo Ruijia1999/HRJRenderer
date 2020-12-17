@@ -143,6 +143,33 @@ HRJrenderer/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/HRJrenderer.dir/build.make CMakeFiles/HRJrenderer.dir/build
 .PHONY : HRJrenderer/fast
 
+HRJgl.o: HRJgl.cpp.o
+
+.PHONY : HRJgl.o
+
+# target to build an object file
+HRJgl.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HRJrenderer.dir/build.make CMakeFiles/HRJrenderer.dir/HRJgl.cpp.o
+.PHONY : HRJgl.cpp.o
+
+HRJgl.i: HRJgl.cpp.i
+
+.PHONY : HRJgl.i
+
+# target to preprocess a source file
+HRJgl.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HRJrenderer.dir/build.make CMakeFiles/HRJrenderer.dir/HRJgl.cpp.i
+.PHONY : HRJgl.cpp.i
+
+HRJgl.s: HRJgl.cpp.s
+
+.PHONY : HRJgl.s
+
+# target to generate assembly for a file
+HRJgl.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HRJrenderer.dir/build.make CMakeFiles/HRJrenderer.dir/HRJgl.cpp.s
+.PHONY : HRJgl.cpp.s
+
 HRJmath.o: HRJmath.cpp.o
 
 .PHONY : HRJmath.o
@@ -287,6 +314,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... HRJrenderer"
+	@echo "... HRJgl.o"
+	@echo "... HRJgl.i"
+	@echo "... HRJgl.s"
 	@echo "... HRJmath.o"
 	@echo "... HRJmath.i"
 	@echo "... HRJmath.s"

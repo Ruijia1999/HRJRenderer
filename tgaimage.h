@@ -50,6 +50,7 @@ struct TGAColor {
         }
         return false;
     }
+
     TGAColor operator *(const double intensity) const {
         TGAColor res = *this;
         double clamped = std::max(0., std::min(intensity, 1.));
@@ -57,6 +58,7 @@ struct TGAColor {
         return res;
     }
 };
+
 
 class TGAImage {
 protected:

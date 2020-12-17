@@ -80,6 +80,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/huangruijia/Desktop/CLion/HRJrenderer/HRJgl.cpp">
+			<Option target="HRJrenderer"/>
+		</Unit>
+		<Unit filename="/Users/huangruijia/Desktop/CLion/HRJrenderer/HRJgl.h">
+			<Option target="HRJrenderer"/>
+		</Unit>
 		<Unit filename="/Users/huangruijia/Desktop/CLion/HRJrenderer/HRJmath.cpp">
 			<Option target="HRJrenderer"/>
 		</Unit>
