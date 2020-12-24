@@ -4,12 +4,17 @@
 CMakeFiles/HRJrenderer.dir/HRJgl.cpp.o
  /Users/huangruijia/Desktop/CLion/HRJrenderer/HRJgl.cpp
  /Users/huangruijia/Desktop/CLion/HRJrenderer/HRJgl.h
+ /Users/huangruijia/Desktop/CLion/HRJrenderer/geometry.h
+ /Users/huangruijia/Desktop/CLion/HRJrenderer/tgaimage.h
 CMakeFiles/HRJrenderer.dir/HRJmath.cpp.o
  /Users/huangruijia/Desktop/CLion/HRJrenderer/HRJmath.cpp
+CMakeFiles/HRJrenderer.dir/draw.cpp.o
+ /Users/huangruijia/Desktop/CLion/HRJrenderer/draw.cpp
 CMakeFiles/HRJrenderer.dir/geometry.cpp.o
  /Users/huangruijia/Desktop/CLion/HRJrenderer/geometry.cpp
  /Users/huangruijia/Desktop/CLion/HRJrenderer/geometry.h
 CMakeFiles/HRJrenderer.dir/main.cpp.o
+ /Users/huangruijia/Desktop/CLion/HRJrenderer/HRJgl.h
  /Users/huangruijia/Desktop/CLion/HRJrenderer/geometry.h
  /Users/huangruijia/Desktop/CLion/HRJrenderer/main.cpp
  /Users/huangruijia/Desktop/CLion/HRJrenderer/model.h

@@ -3,5 +3,5 @@ project(HRJrenderer)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(HRJrenderer main.cpp tgaimage.cpp tgaimage.h model.cpp model.h geometry.cpp geometry.h HRJmath.cpp HRJmath.h HRJgl.cpp HRJgl.h)
+add_executable(HRJrenderer main.cpp tgaimage.cpp tgaimage.h model.cpp model.h geometry.cpp geometry.h HRJmath.cpp HRJmath.h HRJgl.cpp HRJgl.h draw.cpp draw.h)
 

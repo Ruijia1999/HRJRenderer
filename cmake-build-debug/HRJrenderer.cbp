@@ -92,6 +92,12 @@
 		<Unit filename="/Users/huangruijia/Desktop/CLion/HRJrenderer/HRJmath.h">
 			<Option target="HRJrenderer"/>
 		</Unit>
+		<Unit filename="/Users/huangruijia/Desktop/CLion/HRJrenderer/draw.cpp">
+			<Option target="HRJrenderer"/>
+		</Unit>
+		<Unit filename="/Users/huangruijia/Desktop/CLion/HRJrenderer/draw.h">
+			<Option target="HRJrenderer"/>
+		</Unit>
 		<Unit filename="/Users/huangruijia/Desktop/CLion/HRJrenderer/geometry.cpp">
 			<Option target="HRJrenderer"/>
 		</Unit>

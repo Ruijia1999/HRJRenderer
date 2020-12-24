@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/HRJrenderer.dir/HRJgl.cpp.o"
   "CMakeFiles/HRJrenderer.dir/HRJmath.cpp.o"
+  "CMakeFiles/HRJrenderer.dir/draw.cpp.o"
   "CMakeFiles/HRJrenderer.dir/geometry.cpp.o"
   "CMakeFiles/HRJrenderer.dir/main.cpp.o"
   "CMakeFiles/HRJrenderer.dir/model.cpp.o"

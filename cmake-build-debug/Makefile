@@ -197,6 +197,33 @@ HRJmath.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/HRJrenderer.dir/build.make CMakeFiles/HRJrenderer.dir/HRJmath.cpp.s
 .PHONY : HRJmath.cpp.s
 
+draw.o: draw.cpp.o
+
+.PHONY : draw.o
+
+# target to build an object file
+draw.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HRJrenderer.dir/build.make CMakeFiles/HRJrenderer.dir/draw.cpp.o
+.PHONY : draw.cpp.o
+
+draw.i: draw.cpp.i
+
+.PHONY : draw.i
+
+# target to preprocess a source file
+draw.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HRJrenderer.dir/build.make CMakeFiles/HRJrenderer.dir/draw.cpp.i
+.PHONY : draw.cpp.i
+
+draw.s: draw.cpp.s
+
+.PHONY : draw.s
+
+# target to generate assembly for a file
+draw.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HRJrenderer.dir/build.make CMakeFiles/HRJrenderer.dir/draw.cpp.s
+.PHONY : draw.cpp.s
+
 geometry.o: geometry.cpp.o
 
 .PHONY : geometry.o
@@ -320,6 +347,9 @@ help:
 	@echo "... HRJmath.o"
 	@echo "... HRJmath.i"
 	@echo "... HRJmath.s"
+	@echo "... draw.o"
+	@echo "... draw.i"
+	@echo "... draw.s"
 	@echo "... geometry.o"
 	@echo "... geometry.i"
 	@echo "... geometry.s"

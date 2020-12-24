@@ -3,12 +3,17 @@
 
 CMakeFiles/HRJrenderer.dir/HRJgl.cpp.o: ../HRJgl.cpp
 CMakeFiles/HRJrenderer.dir/HRJgl.cpp.o: ../HRJgl.h
+CMakeFiles/HRJrenderer.dir/HRJgl.cpp.o: ../geometry.h
+CMakeFiles/HRJrenderer.dir/HRJgl.cpp.o: ../tgaimage.h
 
 CMakeFiles/HRJrenderer.dir/HRJmath.cpp.o: ../HRJmath.cpp
+
+CMakeFiles/HRJrenderer.dir/draw.cpp.o: ../draw.cpp
 
 CMakeFiles/HRJrenderer.dir/geometry.cpp.o: ../geometry.cpp
 CMakeFiles/HRJrenderer.dir/geometry.cpp.o: ../geometry.h
 
+CMakeFiles/HRJrenderer.dir/main.cpp.o: ../HRJgl.h
 CMakeFiles/HRJrenderer.dir/main.cpp.o: ../geometry.h
 CMakeFiles/HRJrenderer.dir/main.cpp.o: ../main.cpp
 CMakeFiles/HRJrenderer.dir/main.cpp.o: ../model.h

@@ -6,6 +6,12 @@
 
 #IncludeRegexTransform: 
 
+/Users/huangruijia/Desktop/CLion/HRJrenderer/HRJgl.h
+geometry.h
+/Users/huangruijia/Desktop/CLion/HRJrenderer/geometry.h
+tgaimage.h
+/Users/huangruijia/Desktop/CLion/HRJrenderer/tgaimage.h
+
 /Users/huangruijia/Desktop/CLion/HRJrenderer/geometry.h
 cmath
 -
@@ -23,6 +29,8 @@ vector
 -
 geometry.h
 /Users/huangruijia/Desktop/CLion/HRJrenderer/geometry.h
+HRJgl.h
+/Users/huangruijia/Desktop/CLion/HRJrenderer/HRJgl.h
 algorithm
 -
 iostream

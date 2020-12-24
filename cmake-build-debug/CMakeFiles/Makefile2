@@ -94,12 +94,12 @@ clean: CMakeFiles/HRJrenderer.dir/clean
 CMakeFiles/HRJrenderer.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/HRJrenderer.dir/build.make CMakeFiles/HRJrenderer.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/HRJrenderer.dir/build.make CMakeFiles/HRJrenderer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/huangruijia/Desktop/CLion/HRJrenderer/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target HRJrenderer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/huangruijia/Desktop/CLion/HRJrenderer/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target HRJrenderer"
 .PHONY : CMakeFiles/HRJrenderer.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/HRJrenderer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/huangruijia/Desktop/CLion/HRJrenderer/cmake-build-debug/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/huangruijia/Desktop/CLion/HRJrenderer/cmake-build-debug/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/HRJrenderer.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/huangruijia/Desktop/CLion/HRJrenderer/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/HRJrenderer.dir/rule

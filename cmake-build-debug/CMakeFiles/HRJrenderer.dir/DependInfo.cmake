@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/huangruijia/Desktop/CLion/HRJrenderer/HRJgl.cpp" "/Users/huangruijia/Desktop/CLion/HRJrenderer/cmake-build-debug/CMakeFiles/HRJrenderer.dir/HRJgl.cpp.o"
   "/Users/huangruijia/Desktop/CLion/HRJrenderer/HRJmath.cpp" "/Users/huangruijia/Desktop/CLion/HRJrenderer/cmake-build-debug/CMakeFiles/HRJrenderer.dir/HRJmath.cpp.o"
+  "/Users/huangruijia/Desktop/CLion/HRJrenderer/draw.cpp" "/Users/huangruijia/Desktop/CLion/HRJrenderer/cmake-build-debug/CMakeFiles/HRJrenderer.dir/draw.cpp.o"
   "/Users/huangruijia/Desktop/CLion/HRJrenderer/geometry.cpp" "/Users/huangruijia/Desktop/CLion/HRJrenderer/cmake-build-debug/CMakeFiles/HRJrenderer.dir/geometry.cpp.o"
   "/Users/huangruijia/Desktop/CLion/HRJrenderer/main.cpp" "/Users/huangruijia/Desktop/CLion/HRJrenderer/cmake-build-debug/CMakeFiles/HRJrenderer.dir/main.cpp.o"
   "/Users/huangruijia/Desktop/CLion/HRJrenderer/model.cpp" "/Users/huangruijia/Desktop/CLion/HRJrenderer/cmake-build-debug/CMakeFiles/HRJrenderer.dir/model.cpp.o"
