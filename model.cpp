@@ -51,9 +51,9 @@ Model::Model(const std::string filename) : verts_(), uv_(), norms_(), facet_vrt_
     }
     in.close();
     std::cerr << "# v# " << nverts() << " f# "  << nfaces() << " vt# " << uv_.size() << " vn# " << norms_.size() << std::endl;
-//    load_texture(filename, "_diffuse.tga",    diffusemap_);
-//    load_texture(filename, "_nm_tangent.tga", normalmap_);
-//    load_texture(filename, "_spec.tga",       specularmap_);
+    load_texture(filename, "_diffuse.tga",    diffusemap_);
+    load_texture(filename, "_nm_tangent.tga", normalmap_);
+    load_texture(filename, "_spec.tga",       specularmap_);
 }
 
 int Model::nverts() const {
